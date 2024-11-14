@@ -1,0 +1,805 @@
+
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+    text-shadow: 2px 2px 4px white; /* Sombra blanca */;
+}
+body{
+    background-color: wheat;
+    
+    
+}
+header {
+    background-color: orangered;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column; /* Centra el contenido verticalmente */
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    position: absolute;
+    top: 10px; /* Separación desde el borde superior */
+    left: 10px; /* Separación desde el borde izquierdo */
+}
+
+.logos {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-flex;
+    gap: 5px; /* Añade espacio entre los logos */
+}
+h1{
+
+   
+    font-family: "Playfair Display", serif;
+    color:black;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px wheat;
+}
+nav {
+    background-color: wheat; /* Fondo opcional para que el nav destaque */
+    padding: 2px 4px; /* Añade algo de espacio interno */
+    border: 2px solid #FFA07A; /* Naranja claro para el borde */
+    border-radius: 15px; /* Bordes redondeados */
+    display: inline-block; /* Ajusta el tamaño del nav según su contenido */
+    
+}
+.container {
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /* Esto asegura que los elementos estén alineados verticalmente */
+    gap: 10px; /* Ajusta el espacio entre los elementos dentro del contenedor */
+    margin-bottom: 30px;
+    cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+}
+    
+.QuienesSomos{
+    
+    padding: 20px 20px; /* Añade algo de espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-bottom: 50px;
+    width: fit-content; /* Ajusta el tamaño del div al contenido */
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px; /* Ajuste mínimo de padding para envolver el texto */
+    display: inline-block; /* Permite que el borde y fondo solo ocupen el espacio del contenido */
+    background-color: orangered;
+    text-align: center;
+    
+
+}
+
+.QuienesSomos h2{
+    
+    
+    text-shadow: 2px 2px 4px orangered;
+    font-family: "Playfair Display", serif;
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px; /* Ajuste mínimo de padding para envolver el texto */
+    display: inline-block; /* Permite que el borde y fondo solo ocupen el espacio del contenido */
+    text-align: center;
+    background-color: wheat;
+    
+}
+.disciplinas{
+    
+    display: grid;
+    grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Tres columnas para los items */
+    gap: 10px; /* Espacio entre los elementos dentro del contenedor */
+    margin-bottom: 50px;
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+.ChiKung {
+
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+.kempo{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+
+}
+.yoga{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.yogadeportivo{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+
+
+.tratamientos{
+
+   
+    display: grid;
+    grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
+    grid-template-columns: 1fr 1fr ; /* Tres columnas para los items */
+    gap: 10px; /* Espacio entre los elementos dentro del contenedor */
+    margin-bottom: 50px;
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+.AsesoriaAlimentacion{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.Masajes{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.cursos{
+    
+    display: grid;
+    grid-template-rows: auto 1fr; /* Fila para el título y otra para los items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable de columnas */
+    gap: 10px; /* Espacio entre los elementos */
+    grid-auto-rows: min-content; /* Ajusta la altura según el contenido */
+    align-items: start; /* Alinea los items al inicio */
+    margin-bottom: 50px;
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.InstructoradochiKung{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: start; 
+
+}
+
+.MasajesTuina{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: start; 
+
+}
+.InstructoradoYoga{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: start; 
+
+}
+.Acupuntura{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: start; 
+
+}
+.Auriculoterapia{
+    
+    background-color:wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-self: start; }
+
+.disciplinas h2 {
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+    margin-bottom: 20px;
+    align-self: center;
+}
+.disciplinas p{
+
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+       margin-bottom: 20px;
+       align-self: center;
+   }
+.tratamientos h2 {
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+    margin-bottom: 20px;
+    align-self: center;
+}
+.tratamientos p{
+
+ grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+    margin-bottom: 20px;
+    align-self: center;
+}
+.cursos h2 {
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+    margin-bottom: 20px;
+    align-self: center;
+}
+.cursos p{
+
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+       margin-bottom: 20px;
+       align-self: center;
+   }
+
+   .formaciones{
+    text-align: left; /* Alinea el texto hacia la izquierda */
+    padding: 20px;
+    background-color: orangered; /* Fondo claro opcional */
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+    border-radius: 15px; /* Bordes redondeados del contenedor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    margin-bottom: 30px;
+   }
+    
+
+    .ProfesoradoChiKung {
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    /* Estilos para el título y contenedor de la imagen */
+    .ProfesoradoChiKung h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    
+    /* Estilos para la imagen dentro del título */
+    .ProfesoradoChiKung img {
+        border-radius: 15px; /* Imagen redonda */
+        width: 300px; /* Tamaño de la imagen */
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        
+        
+    }
+    .MasajesTuiNa{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+    .MasajesTuiNa h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .MasajesTuiNa img {
+        border-radius: 15px; /* Imagen redonda */
+        width: 300px; /* Tamaño de la imagen */
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        
+        
+    }
+    .ProfesoradodeYoga{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+    .ProfesoradodeYoga h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .ProfesoradodeYoga img {
+        border-radius: 15px; /* Imagen redonda */
+        width: 300px; /* Tamaño de la imagen */
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        
+        
+    }
+    .CursoAcupuntura{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+    .CursoAcupuntura h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .CursoAcupuntura img {
+        border-radius: 15px; /* Imagen redonda */
+        width: 300px; /* Tamaño de la imagen */
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        
+        
+    }
+    .CursoAuriculoterapia{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+    .CursoAuriculoterapia h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .CursoAuriculoterapia img {
+        border-radius: 15px; /* Imagen redonda */
+        width: 300px; /* Tamaño de la imagen */
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .Contacto{
+        margin-bottom: 100px;
+    }
+
+    .Clases {
+        padding: 20px;
+        background-color: orangered; 
+        border: 2px solid #FFA07A; /* Borde de color naranja claro */
+        border-radius: 15px; /* Bordes redondeados del contenedor */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+        margin-bottom: 50px;
+    }
+
+    .clasesChiKung {
+            padding: 20px;
+            background-color: wheat;
+            border: 2px solid #FFA07A;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+           
+            margin-bottom: 50px;
+    
+        }
+        
+    .clasesKempo{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        
+
+    }
+    
+    .clasesYoga{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        
+
+    }
+    
+    .clasesYogaDeportivo{
+        padding: 20px;
+        background-color: wheat;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        
+
+    }
+    .clasesChiKung h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .clasesChiKung img {
+        border-radius: 15px; /* Imagen redondeada */
+        width: 200px; /* Tamaño fijo en ancho */
+        height: 200px; /* Tamaño fijo en alto */
+        object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+        margin-bottom: 30px;
+        align-items: center;
+        
+        
+    }
+    .clasesKempo h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .clasesKempo img {
+        border-radius: 15px; /* Imagen redondeada */
+        width: 200px; /* Tamaño fijo en ancho */
+        height: 200px; /* Tamaño fijo en alto */
+        object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+        margin-bottom: 30px;
+        
+        
+    }
+    .clasesYoga h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .clasesYoga img {
+        border-radius: 15px; /* Imagen redondeada */
+        width: 200px; /* Tamaño fijo en ancho */
+        height: 200px; /* Tamaño fijo en alto */
+        object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+        margin-bottom: 30px;
+        
+        
+    }
+    .clasesYogaDeportivo h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .clasesYogaDeportivo img {
+        border-radius: 15px; /* Imagen redondeada */
+        width: 200px; /* Tamaño fijo en ancho */
+        height: 200px; /* Tamaño fijo en alto */
+        object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .Tratamientos2 {
+        padding: 20px;
+        background-color: orangered; 
+        border: 2px solid #FFA07A; /* Borde de color naranja claro */
+        border-radius: 15px; /* Bordes redondeados del contenedor */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+        margin-bottom: 50px;
+    }
+
+    .TratamientoAcupuntura {
+            padding: 20px;
+            background-color: wheat;
+            border: 2px solid #FFA07A;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 50px;
+    
+        }
+        .TratamientoMasajes {
+            padding: 20px;
+            background-color: wheat;
+            border: 2px solid #FFA07A;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 50px;
+    
+        }
+        .TratamientoAuriculoterapia {
+            padding: 20px;
+            background-color: wheat;
+            border: 2px solid #FFA07A;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 50px;
+    
+        }
+        .TratamientoAlimentacion {
+            padding: 20px;
+            background-color: wheat;
+            border: 2px solid #FFA07A;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 50px;
+    
+        }
+    .calendar {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background-color: wheat;
+    }
+    .calendar th, .calendar td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    .calendar th {
+        background-color: orangered;
+        color: black;
+    }
+    .Tratamientos2 h2 {
+        position: relative; /* Para controlar la posición de la imagen dentro del título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; /* Espacio entre la imagen y el texto del título */
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px orangered;
+        font-family: "Playfair Display", serif;
+        border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px; /* Espacio interno del título */
+        background-color: wheat;
+       
+    }
+    .Tratamientos2 h4{
+
+   
+        font-family: "Playfair Display", serif;
+        color:black;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px wheat;
+    }
+
+h2 {
+    
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px wheat;
+    
+    
+
+}
+
+ p {
+    
+    
+    text-shadow: 2px 2px 4px white; /* Sombra blanca */
+    margin-bottom: 30px;
+   
+}
+
+section{
+    margin: 10px;
+    margin-bottom: 50px;
+    
+
+}
+
+form {
+    margin-bottom: 200px;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+ul{
+    margin-bottom: 30px;
+
+}
+legend{
+    margin-bottom: 30px; 
+    
+    text-align: center;
+}
+fieldset{
+   
+    border: 2px solid #FFA07A;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .checkbox-group {
+        grid-template-columns: 1fr 1fr; /* Distribuye los checkboxes en dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .checkbox-group {
+        grid-template-columns: 1fr; /* Distribuye los checkboxes en una columna en pantallas pequeñas */
+    }
+
+    .buttons input {
+        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+        margin: 10px 0;
+    }
+}
+   
