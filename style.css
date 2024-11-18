@@ -788,11 +788,13 @@ fieldset{
     .checkbox-group {
         grid-template-columns: 1fr 1fr; /* Distribuye los checkboxes en dos columnas en pantallas medianas */
     }
+
+    .container {
+        padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+    }
 }
 
 @media (max-width: 480px) {
-    
-
     .checkbox-group {
         grid-template-columns: 1fr; /* Distribuye los checkboxes en una columna en pantallas pequeñas */
     }
@@ -801,5 +803,14 @@ fieldset{
         width: 100%; /* Asegura que los botones ocupen todo el ancho */
         margin: 10px 0;
     }
+
+    .container {
+        padding: 15px; /* Reduce el padding para pantallas muy pequeñas */
+        font-size: 14px; /* Ajusta el tamaño de fuente para mejorar la legibilidad */
+    }
+
+    header, footer {
+        text-align: center; /* Centra el contenido del encabezado y pie de página */
+        padding: 10px;
+    }
 }
-   
