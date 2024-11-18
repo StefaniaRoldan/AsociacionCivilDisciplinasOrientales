@@ -786,31 +786,40 @@ fieldset{
 /* Media Queries */
 @media (max-width: 768px) {
     .checkbox-group {
-        grid-template-columns: 1fr 1fr; /* Distribuye los checkboxes en dos columnas en pantallas medianas */
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
+        gap: 10px;
     }
 
     .container {
-        padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+        padding: 20px; /* Reduce el padding en pantallas medianas */
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .checkbox-group {
-        grid-template-columns: 1fr; /* Distribuye los checkboxes en una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
 
     .buttons input {
-        width: 100%; /* Asegura que los botones ocupen todo el ancho */
+        width: 100%; /* Botones ocupan todo el ancho */
         margin: 10px 0;
     }
 
     .container {
-        padding: 15px; /* Reduce el padding para pantallas muy pequeñas */
+        padding: 15px; /* Ajusta el padding en pantallas muy pequeñas */
+    }
+
+    body {
         font-size: 14px; /* Ajusta el tamaño de fuente para mejorar la legibilidad */
     }
 
     header, footer {
-        text-align: center; /* Centra el contenido del encabezado y pie de página */
+        text-align: center;
         padding: 10px;
     }
 }
