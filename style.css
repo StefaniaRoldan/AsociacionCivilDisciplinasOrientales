@@ -107,6 +107,7 @@ nav {
     display: grid;
     grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
     grid-template-columns: 1fr 1fr 1fr 1fr; /* Tres columnas para los items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable de columnas */
     gap: 10px; /* Espacio entre los elementos dentro del contenedor */
     margin-bottom: 50px;
     border: 2px solid #FFA07A; /* Borde de color naranja claro */
@@ -165,6 +166,7 @@ nav {
     display: grid;
     grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
     grid-template-columns: 1fr 1fr ; /* Tres columnas para los items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable de columnas */
     gap: 10px; /* Espacio entre los elementos dentro del contenedor */
     margin-bottom: 50px;
     border: 2px solid #FFA07A; /* Borde de color naranja claro */
@@ -783,7 +785,41 @@ fieldset{
    
 }
 
-/* Media Queries */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Grupo de checkboxes */
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en pantallas grandes */
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+/* Botones */
+.buttons input {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons input:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para dispositivos más pequeños */
 @media (max-width: 768px) {
     .checkbox-group {
         grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas medianas */
