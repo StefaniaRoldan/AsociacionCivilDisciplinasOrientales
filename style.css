@@ -45,7 +45,7 @@ header {
 }
 h1{
 
-   
+    
     font-family: "Playfair Display", serif;
     color:black;
     display: inline-flex;
@@ -106,14 +106,13 @@ nav {
     
     display: grid;
     grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Tres columnas para los items */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable de columnas */
     gap: 10px; /* Espacio entre los elementos dentro del contenedor */
     margin-bottom: 50px;
     border: 2px solid #FFA07A; /* Borde de color naranja claro */
     border-radius: 15px; /* Bordes redondeados */
-    padding: 20px;
-    
+    padding: 20px;   
     color: wheat;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -158,7 +157,20 @@ nav {
     text-align: center;
 
 }
-
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    background-color: wheat;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px orangered;
+    font-family: "Playfair Display", serif;
+    border: 2px solid #FFA07A; /* Borde de color naranja claro */
+}
 
 
 .tratamientos{
@@ -278,6 +290,17 @@ nav {
     text-align: center;
     background-color: wheat;
 }
+.disciplinas h3 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: black; /* Color del texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para mejor visibilidad */
+    font-family: "Playfair Display", serif; /* Tipografía */
+    text-shadow: 2px 2px 4px orangered;
+    
+}
+
+
 .disciplinas p{
  
     margin: 0; /* Elimina márgenes predeterminados */
@@ -513,6 +536,22 @@ nav {
         margin-bottom: 30px;
         
         
+    }
+
+    .cursos button{
+        grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+        
+
+    }
+    .disciplinas button{
+        grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+        
+
+    }
+    .tratamientos button{
+        grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho */
+        
+
     }
 
     .Contacto{
