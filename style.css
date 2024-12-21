@@ -178,15 +178,14 @@ button {
    
     display: grid;
     grid-template-rows: auto 1fr; /* Una fila para el h2 y otra para los items */
-    grid-template-columns: 1fr 1fr ; /* Tres columnas para los items */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste adaptable de columnas */
     gap: 10px; /* Espacio entre los elementos dentro del contenedor */
     margin-bottom: 50px;
     border: 2px solid #FFA07A; /* Borde de color naranja claro */
     border-radius: 15px; /* Bordes redondeados */
-    padding: 20px;
-    
-    color: white;
+    padding: 20px;   
+    color: wheat;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     align-items: end;

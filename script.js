@@ -109,6 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+//------------------------------------------------------------------------
+
+
+
+//Movimientos para los divs 
+
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionamos todos los divs en la página
     const divs = document.querySelectorAll('div');
