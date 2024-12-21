@@ -12,9 +12,7 @@ function Bienvenida() {
             // Guardar el nombre en localStorage
             localStorage.setItem("nombre", nombre);
             alert(`Hola ${nombre}, bienvenidx a la Asociación Civil de Disciplinas Orientales`);
-        } else {
-            alert("Hola, bienvenidx a la Asociación Civil de Disciplinas Orientales");
-        }
+        } 
     } else {
         // Si ya existe un nombre en localStorage
         alert(`Hola de nuevo, ${nombre}, bienvenidx a la Asociación Civil de Disciplinas Orientales`);
