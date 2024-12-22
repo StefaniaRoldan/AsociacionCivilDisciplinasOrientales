@@ -148,7 +148,7 @@ function registrarUsuario() {
     const nombreGuardado = localStorage.getItem("nombre");
 
     if (nombreGuardado) {
-        alert(`¡Bienvenido nuevamente, ${nombreGuardado}!`);
+        
         // Agregar al array de usuarios si no está previamente registrado
         const usuarioExistente = usuarios.find(usuario => usuario.nombre === nombreGuardado);
         if (!usuarioExistente) {
