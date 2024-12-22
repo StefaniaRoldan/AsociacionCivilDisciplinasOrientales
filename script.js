@@ -17,7 +17,6 @@ function Bienvenida() {
         // Si ya existe un nombre en localStorage
         alert(`Hola de nuevo, ${nombre}, bienvenidx a la Asociación Civil de Disciplinas Orientales`);
     }
-
 }
 
 // Llamar a la función
