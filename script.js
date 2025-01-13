@@ -1,5 +1,5 @@
 
-Bienvenida(); //
+
 
 function Bienvenida() {
     // Verificar si ya hay un nombre guardado en el almacenamiento
