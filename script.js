@@ -2,23 +2,36 @@
 
 
 function Bienvenida() {
-    // Verificar si ya hay un nombre guardado en el almacenamiento
-    let nombre = localStorage.getItem("nombre");
+    // Verificar si el mensaje de bienvenida ya fue mostrado
+    const bienvenidaMostrada = localStorage.getItem("bienvenidaMostrada");
 
-    if (!nombre) {
+    if (!bienvenidaMostrada) {
         // Pedir el nombre si no está almacenado
-        nombre = prompt("Por favor, ingresa tu nombre:");
+        let nombre = localStorage.getItem("nombre");
+
+        if (!nombre) {
+            nombre = prompt("Por favor, ingresa tu nombre:");
+            if (nombre) {
+                // Guardar el nombre en localStorage
+                localStorage.setItem("nombre", nombre);
+            }
+        }
+
+        // Mostrar el mensaje de bienvenida
         if (nombre) {
-            // Guardar el nombre en localStorage
-            localStorage.setItem("nombre", nombre);
             alert(`Hola ${nombre}, bienvenidx a la Asociación Civil de Disciplinas Orientales`);
-        } 
+        }
+
+        // Marcar que el mensaje de bienvenida ya fue mostrado
+        localStorage.setItem("bienvenidaMostrada", "true");
     } else {
-        // Si ya existe un nombre en localStorage
-        alert(`Hola de nuevo, ${nombre}, bienvenidx a la Asociación Civil de Disciplinas Orientales`);
+        // Si ya existe un nombre y el mensaje ya fue mostrado
+        const nombre = localStorage.getItem("nombre");
+        if (nombre) {
+            console.log(`Bienvenidx nuevamente, ${nombre}.`);
+        }
     }
 }
-
 // Llamar a la función
 Bienvenida();
 
